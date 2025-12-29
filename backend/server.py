@@ -134,7 +134,7 @@ async def health():
 async def create_session(
     viewport_width: int = 1280, 
     viewport_height: int = 720,
-    start_url: str = "https://pocketoption.com/login"
+    start_url: str = "https://google.com"
 ):
     global browser_instance
     
