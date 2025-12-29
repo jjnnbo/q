@@ -134,7 +134,7 @@ async def health():
 async def create_session(
     viewport_width: int = 1280, 
     viewport_height: int = 720,
-    start_url: str = "https://pocketoption.com/pt/login"
+    start_url: str = "https://pocketoption.com/login"
 ):
     global browser_instance
     
@@ -275,7 +275,7 @@ async def websocket_endpoint(websocket: WebSocket, session_id: str):
     
     # High-performance optimized streaming
     async def stream_screenshots():
-        fps_target = 40  # Target 40 FPS
+        fps_target = 60  # Target 40 FPS
         min_frame_time = 1.0 / fps_target
         error_count = 0
         
